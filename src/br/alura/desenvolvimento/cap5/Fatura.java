@@ -1,4 +1,4 @@
-package br.alura.refatoracao.cap5;
+package br.alura.desenvolvimento.cap5;
 
 public class Fatura {
 
@@ -24,27 +24,9 @@ public class Fatura {
 		this.cliente = cliente;
 	}
 
-	//evitar ao maximo criar atributos booleanos que mudem o comportamento do método
-
-	/*public double converteValor(boolean dolar) {
+	public double converteValor(boolean dolar) {
 		double taxa = 1;
-		if (dolar) {
-			taxa = 2.7;
-		}
-		return valorMensal * taxa;
-	}*/
-
-	//exemplo simples de encapsulamento
-	private double converteValorTaxa(double taxa) {
+		if (dolar) taxa = 2.7;
 		return valorMensal * taxa;
 	}
-
-	public double emDolar() {
-		return converteValorTaxa(2.7);
-	}
-
-	public double emReal() {
-		return converteValorTaxa(1.0);
-	}
-
 }
