@@ -1,5 +1,4 @@
-package br.alura.refatoracao.cap6;
-import static br.alura.refatoracao.cap6.Moeda.DOLAR;
+package br.alura.desenvolvimento.cap6;
 
 public class Fatura {
 
@@ -26,8 +25,7 @@ public class Fatura {
 	}
 
 	public double emDolar() {
-		//esconder numeros mágicos (fixo, sem descrição do que significa)
-		return valorMensal * DOLAR.getTaxa();
+		return valorMensal * 2.7;
 	}
 
 }
